@@ -2608,7 +2608,7 @@ var $builtinmodule = function (name) {
    * http://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html
    */
   var linspace_f = function (start, stop, num, endpoint, retstep) {
-    Sk.builtin.pyCheckArgs("linspace", arguments, 3, 5);
+    Sk.builtin.pyCheckArgs("linspace", arguments, 2, 5);
     Sk.builtin.pyCheckType("start", "number", Sk.builtin.checkNumber(
       start));
     Sk.builtin.pyCheckType("stop", "number", Sk.builtin.checkNumber(
